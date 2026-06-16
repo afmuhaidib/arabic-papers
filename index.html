@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="مراجعة شاملة وتفاعلية لمحاور اختبار نهائي اللغة العربية — الصف السادس الابتدائي، الفصل الدراسي الثاني، مدارس نجد الأهلية">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="مراجعة اللغة العربية – الصف السادس">
+<meta property="og:description" content="مراجعة شاملة وتفاعلية لمحاور الاختبار النهائي — من صفحة ٣٩ حتى ١٣٥">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<title>مراجعة اللغة العربية – الصف السادس</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:    #1a1a2e;
+    --gold:   #c9942a;
+    --gold-light: #f0d080;
+    --teal:   #0f7b8c;
+    --teal-light: #e0f4f7;
+    --rose:   #b84c6e;
+    --rose-light: #fce8ef;
+    --sage:   #3a7d44;
+    --sage-light: #e5f4e8;
+    --violet: #5c3d8f;
+    --violet-light: #ede5f9;
+    --sand:   #f7f3ec;
+    --white:  #ffffff;
+    --border: #e2ddd5;
+    --muted:  #6b6560;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--sand);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--ink);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .site-title {
+    font-family: 'Amiri', serif;
+    font-size: 1.3rem;
+    color: var(--gold-light);
+    padding: 1rem 0;
+    white-space: nowrap;
+  }
+  nav {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+  nav a:hover { background: var(--gold); color: var(--ink); }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--ink) 0%, #16213e 60%, #0f3460 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '٭';
+    position: absolute;
+    font-size: 30rem;
+    color: rgba(201,148,42,0.04);
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Amiri', serif;
+    pointer-events: none;
+  }
+  .hero-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 1rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: 'Amiri', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  .hero h1 span { color: var(--gold-light); }
+  .hero p {
+    font-size: 1.05rem;
+    color: #b0b8c8;
+    max-width: 560px;
+    margin: 0 auto 2.5rem;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.8rem;
+    color: #8899aa;
+    margin-top: 0.2rem;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+  }
+
+  /* ── SECTION CARDS ── */
+  .topic-section {
+    background: var(--white);
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    border: 1px solid var(--border);
+  }
+
+  .section-header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+  }
+  .section-header .subtitle {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 0.1rem;
+  }
+  .section-body { padding: 2rem; }
+
+  /* color themes */
+  .theme-teal .section-icon { background: var(--teal-light); color: var(--teal); }
+  .theme-teal .section-header { border-right: 4px solid var(--teal); }
+  .theme-rose .section-icon { background: var(--rose-light); color: var(--rose); }
+  .theme-rose .section-header { border-right: 4px solid var(--rose); }
+  .theme-sage .section-icon { background: var(--sage-light); color: var(--sage); }
+  .theme-sage .section-header { border-right: 4px solid var(--sage); }
+  .theme-gold .section-icon { background: #fef3d8; color: var(--gold); }
+  .theme-gold .section-header { border-right: 4px solid var(--gold); }
+  .theme-violet .section-icon { background: var(--violet-light); color: var(--violet); }
+  .theme-violet .section-header { border-right: 4px solid var(--violet); }
+  .theme-ink .section-icon { background: #e8eaf0; color: var(--ink); }
+  .theme-ink .section-header { border-right: 4px solid var(--ink); }
+
+  /* ── RULE BOXES ── */
+  .rule-box {
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid transparent;
+  }
+  .rule-box.teal { background: var(--teal-light); border-color: #b0dce3; }
+  .rule-box.rose { background: var(--rose-light); border-color: #f0c0d0; }
+  .rule-box.sage { background: var(--sage-light); border-color: #b8dfc0; }
+  .rule-box.gold { background: #fef9e8; border-color: #e8cc80; }
+  .rule-box.violet { background: var(--violet-light); border-color: #c8b8e8; }
+  .rule-box.sand { background: var(--sand); border-color: var(--border); }
+  .rule-box h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .rule-box p, .rule-box li { font-size: 0.92rem; line-height: 1.9; }
+  .rule-box ul { padding-right: 1.2rem; }
+  .rule-box ul li { margin-bottom: 0.25rem; }
+
+  /* ── EXAMPLES ── */
+  .examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .example-chip {
+    background: var(--sand);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .example-chip .arabic { font-family: 'Amiri', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); display: block; margin-bottom: 0.2rem; }
+  .example-chip .note { font-size: 0.75rem; color: var(--muted); }
+
+  /* ── TABLE ── */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  .styled-table th {
+    background: var(--ink);
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  .styled-table td {
+    padding: 0.65rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .styled-table tr:last-child td { border-bottom: none; }
+  .styled-table tr:nth-child(even) td { background: var(--sand); }
+  .styled-table .arabic-cell { font-family: 'Amiri', serif; font-size: 1.1rem; }
+
+  /* ── TWO COLUMN ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+
+  /* ── POEM ── */
+  .poem-lines {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+  .poem-line {
+    font-family: 'Amiri', serif;
+    font-size: 1.15rem;
+    color: #e8d8a0;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    line-height: 2;
+  }
+  .poem-line:last-child { border-bottom: none; }
+
+  /* ── BADGE ── */
+  .badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    margin: 0 0.2rem;
+  }
+  .badge.teal { background: var(--teal); color: white; }
+  .badge.gold { background: var(--gold); color: white; }
+  .badge.rose { background: var(--rose); color: white; }
+  .badge.sage { background: var(--sage); color: white; }
+  .badge.violet { background: var(--violet); color: white; }
+
+  /* ── HIGHLIGHT TEXT ── */
+  .hl { font-weight: 700; color: var(--teal); }
+  .hl-gold { font-weight: 700; color: var(--gold); }
+  .hl-rose { font-weight: 700; color: var(--rose); }
+  .hl-violet { font-weight: 700; color: var(--violet); }
+  .hl-sage { font-weight: 700; color: var(--sage); }
+
+  /* ── ACCORDION ── */
+  .accordion-item {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+  }
+  .accordion-btn {
+    width: 100%;
+    background: var(--sand);
+    border: none;
+    padding: 1rem 1.25rem;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .accordion-btn:hover { background: #ede9e0; }
+  .accordion-btn .arrow { transition: transform 0.3s; font-size: 0.8rem; color: var(--muted); }
+  .accordion-btn.open .arrow { transform: rotate(180deg); }
+  .accordion-content {
+    display: none;
+    padding: 1.25rem;
+    background: white;
+    border-top: 1px solid var(--border);
+  }
+  .accordion-content.open { display: block; }
+
+  /* ── READING TEXT ── */
+  .reading-text {
+    background: #f9f6f0;
+    border-right: 4px solid var(--gold);
+    border-radius: 0 12px 12px 0;
+    padding: 1.5rem;
+    font-family: 'Amiri', serif;
+    font-size: 1.05rem;
+    line-height: 2.1;
+    color: #2a2420;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── FORMULA ── */
+  .formula-box {
+    background: var(--ink);
+    color: #f0d080;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    font-family: 'Amiri', serif;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    letter-spacing: 0.02em;
+  }
+  .formula-box .plus { color: #888; margin: 0 0.5rem; font-size: 1rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    color: #666;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+  }
+  footer strong { color: var(--gold-light); }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 1.5rem 0;
+  }
+
+  /* quiz styles */
+  .quiz-q {
+    background: var(--sand);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.92rem;
+  }
+  .quiz-q strong { display: block; margin-bottom: 0.4rem; }
+  .quiz-options { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+  .opt-btn {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 0.35rem 0.9rem;
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--ink);
+  }
+  .opt-btn:hover { border-color: var(--teal); color: var(--teal); }
+  .opt-btn.correct { background: #d4edda; border-color: var(--sage); color: var(--sage); }
+  .opt-btn.wrong { background: #f8d7da; border-color: var(--rose); color: var(--rose); }
+
+  /* progress bar */
+  .progress-bar-wrap { background: #e0e0e0; border-radius: 100px; height: 6px; margin-bottom: 1.5rem; }
+  .progress-bar { background: var(--gold); height: 6px; border-radius: 100px; width: 0; transition: width 0.4s; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="site-title">مدارس نجد الأهلية · قسم اللغة العربية</div>
+    <nav>
+      <a href="#reading">القراءة</a>
+      <a href="#shart">الشرط</a>
+      <a href="#tawkid">التوكيد</a>
+      <a href="#alef">الألف اللينة</a>
+      <a href="#tanwin">التنوين</a>
+      <a href="#poem">الشعر</a>
+      <a href="#jar">حروف الجر</a>
+      <a href="#mudari">الفعل المضارع</a>
+      <a href="#mushtaqat">المشتقات</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-tag">الفصل الدراسي الثاني · الصف السادس الابتدائي</div>
+  <h1>أوراق مراجعة<br><span>اللغة العربية</span></h1>
+  <p>مراجعة شاملة وتفاعلية لمحاور الاختبار النهائي — من صفحة ٣٩ حتى ١٣٥</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">٩</span><div class="stat-label">محاور رئيسية</div></div>
+    <div class="stat"><span class="stat-num">٦</span><div class="stat-label">دروس نحوية</div></div>
+    <div class="stat"><span class="stat-num">٣</span><div class="stat-label">دروس إملائية</div></div>
+  </div>
+</div>
+
+<main>
+
+  <!-- ===== READING ===== -->
+  <section class="topic-section theme-teal" id="reading">
+    <div class="section-header">
+      <div class="section-icon">📖</div>
+      <div>
+        <h2>فهم المقروء: المعلبات الغذائية</h2>
+        <div class="subtitle">قراءة صامتة وأسئلة استيعاب</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="reading-text">
+        تُعدّ المعلبات الغذائية من أهم الوسائل الحديثة لحفظ الطعام، حيث تساعد على توفير الغذاء لفترات طويلة دون أن يتعرض للتلف بسرعة. وقد ظهرت هذه الطريقة نتيجة تطور الصناعات الغذائية والحاجة إلى حفظ الطعام في أوقات السفر أو في المناطق التي يصعب فيها توفر الغذاء الطازج.<br><br>
+        تعتمد فكرة المعلبات على وضع الطعام داخل علب معدنية أو زجاجية، ثم تعقيمه بدرجات حرارة عالية للقضاء على البكتيريا والجراثيم، وبعد ذلك تُغلق العلب بإحكام شديد لمنع دخول الهواء. وتشمل المعلبات أنواعاً متعددة مثل الخضروات والفواكه واللحوم والأسماك والبقوليات.<br><br>
+        ومع ذلك، فإن الإفراط في تناول المعلبات قد يكون له بعض الأضرار الصحية، لأنها قد تحتوي على نسب مرتفعة من الملح أو المواد الحافظة. لذلك ينصح الأطباء وخبراء التغذية بالاعتدال في استخدامها.
+      </div>
+
+      <div class="rule-box teal">
+        <h3>⚡ أسئلة الاستيعاب — إجابات نموذجية</h3>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <span>١ — لماذا تُعد المعلبات من أهم الوسائل الحديثة لحفظ الطعام؟</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          لأنها تساعد على توفير الغذاء لفترات طويلة دون أن يتعرض للتلف بسرعة، مما يجعلها وسيلة مفيدة في السفر والمناطق التي يصعب فيها توفر الغذاء الطازج.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <span>٢ — بماذا تتميز المعلبات؟</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          تتميز المعلبات بسهولة استخدامها، فهي توفر الوقت والجهد في إعداد الطعام، وتكون جاهزة للاستهلاك مباشرة أو بعد تسخين بسيط.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn" onclick="toggleAcc(this)">
+          <span>٣ — لماذا ينصح الأطباء بالاعتدال في استخدام المعلبات؟</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="accordion-content">
+          لأن الإفراط في تناولها قد يكون له أضرار صحية، إذ تحتوي على نسب مرتفعة من الملح أو المواد الحافظة، لذا ينصحون بالاعتماد على الأطعمة الطازجة قدر الإمكان.
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="rule-box gold">
+        <h3>🔍 استخرج من النص</h3>
+        <div class="two-col">
+          <div>
+            <p><strong>وسيلة من وسائل حفظ الطعام:</strong> المعلبات الغذائية</p>
+            <p><strong>ألف لينة:</strong> البكتيريا / مستوى</p>
+            <p><strong>جملة فعلية:</strong> تُعدّ المعلبات الغذائية...</p>
+          </div>
+          <div>
+            <p><strong>اسم مجرور:</strong> الطعامِ / السفرِ</p>
+            <p><strong>همزة متطرفة:</strong> الغذاء / الهواء</p>
+            <p><strong>اسم ممدود:</strong> الغذاء — الهواء — الماء</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHART ===== -->
+  <section class="topic-section theme-violet" id="shart">
+    <div class="section-header">
+      <div class="section-icon">⚖️</div>
+      <div>
+        <h2>أسلوب الشرط</h2>
+        <div class="subtitle">أدوات الشرط: إنْ — مَنْ</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="rule-box violet">
+        <h3>📌 التعريف</h3>
+        <p>أسلوبٌ يدلّ على ارتباط جملةٍ بأخرى بأداةٍ تُسمى <strong>أداة الشرط</strong>.</p>
+        <div class="formula-box" style="margin-top:1rem;">
+          <span>أداة الشرط</span>
+          <span class="plus">+</span>
+          <span>فعل الشرط</span>
+          <span class="plus">+</span>
+          <span>جواب الشرط</span>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="rule-box sand">
+          <h3 style="color:var(--violet)">إنْ</h3>
+          <p>تُستخدم مع الأفعال</p>
+          <ul>
+            <li>إنْ تَكرمْ ضيفك يُحبّك الناسُ</li>
+            <li>إنْ تصدقْ يَثقْ بك الناسُ</li>
+            <li>إنْ تذاكرْ تنجحْ</li>
+          </ul>
+        </div>
+        <div class="rule-box sand">
+          <h3 style="color:var(--violet)">مَنْ</h3>
+          <p>تُستخدم مع الأشخاص</p>
+          <ul>
+            <li>مَنْ يُحافظ على صلاته يَفزْ</li>
+            <li>مَنْ يُطع الله يَفلحْ</li>
+            <li>مَنْ يَصدقْ يُحترمْ</li>
+          </ul>
+        </div>
+      </div>
+
+      <table class="styled-table">
+        <thead>
+          <tr><th>الجملة</th><th>أداة الشرط</th><th>فعل الشرط</th><th>جواب الشرط</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="arabic-cell">إنْ تكرمْ ضيفك يحبّك الناسُ</td>
+            <td><span class="badge violet">إنْ</span></td>
+            <td class="arabic-cell">تكرمْ</td>
+            <td class="arabic-cell">يحبّك الناسُ</td>
+          </tr>
+          <tr>
+            <td class="arabic-cell">مَنْ يحافظ على صلاته يَفزْ</td>
+            <td><span class="badge teal">مَنْ</span></td>
+            <td class="arabic-cell">يحافظ</td>
+            <td class="arabic-cell">يَفزْ</td>
+          </tr>
+          <tr>
+            <td class="arabic-cell">إنْ تصدقْ يَثقْ بك الناسُ</td>
+            <td><span class="badge violet">إنْ</span></td>
+            <td class="arabic-cell">تصدقْ</td>
+            <td class="arabic-cell">يَثقْ بك الناسُ</td>
+          </tr>
+          <tr>
+            <td class="arabic-cell">مَنْ يطع الله ورسوله يَفلحْ</td>
+            <td><span class="badge teal">مَنْ</span></td>
+            <td class="arabic-cell">يطعِ</td>
+            <td class="arabic-cell">يَفلحْ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== TAWKID ===== -->
+  <section class="topic-section theme-rose" id="tawkid">
+    <div class="section-header">
+      <div class="section-icon">✅</div>
+      <div>
+        <h2>التوكيد</h2>
+        <div class="subtitle">ألفاظه: كل — نفس — عين</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="rule-box rose">
+        <h3>📌 القاعدة</h3>
+        <ul>
+          <li>التوكيد يُرسّخ المعنى ويقوّيه في نفس السامع.</li>
+          <li>من ألفاظه: <span class="hl-rose">كُلّ — نَفْس — عَيْن</span></li>
+          <li>يتصل بضمير يعود على المؤَكَّد.</li>
+        </ul>
+      </div>
+
+      <div class="examples-grid">
+        <div class="example-chip">
+          <span class="arabic">حضر الطلابُ كُلُّهم</span>
+          <span class="note">ضمير: هم (مذكر جمع)</span>
+        </div>
+        <div class="example-chip">
+          <span class="arabic">سلّمتُ على المدير نَفْسِه</span>
+          <span class="note">ضمير: ه (مفرد مذكر)</span>
+        </div>
+        <div class="example-chip">
+          <span class="arabic">شاهدتُ اللاعبَ عَيْنَه</span>
+          <span class="note">ضمير: ه (مفرد مذكر)</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="rule-box sand">
+        <h3>🔡 الضمائر المتصلة بألفاظ التوكيد</h3>
+        <table class="styled-table" style="margin-top:0.5rem">
+          <thead><tr><th>المؤكَّد</th><th>كُلّ</th><th>نَفْس</th><th>عَيْن</th></tr></thead>
+          <tbody>
+            <tr><td>مفرد مذكر</td><td class="arabic-cell">كُلُّه</td><td class="arabic-cell">نَفْسُه</td><td class="arabic-cell">عَيْنُه</td></tr>
+            <tr><td>مفرد مؤنث</td><td class="arabic-cell">كُلُّها</td><td class="arabic-cell">نَفْسُها</td><td class="arabic-cell">عَيْنُها</td></tr>
+            <tr><td>جمع مذكر</td><td class="arabic-cell">كُلُّهم</td><td class="arabic-cell">أَنْفُسُهم</td><td class="arabic-cell">أَعْيُنُهم</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TANWIN ===== -->
+  <section class="topic-section theme-gold" id="tanwin">
+    <div class="section-header">
+      <div class="section-icon">🔤</div>
+      <div>
+        <h2>تنوين الاسم المقصور والممدود والمنقوص</h2>
+        <div class="subtitle">الأسماء الثلاثة في حالات الإعراب</div>
+      </div>
+    </div>
+    <div class="section-body">
+
+      <div class="rule-box gold">
+        <h3>١ — الاسم المقصور 🔵</h3>
+        <p>هو اسم آخره <span class="hl-gold">ألفٌ لازمة</span> مفتوح ما قبلها. مثل: فَتى — عصا — مستشفى</p>
+        <p style="margin-top:0.5rem">🔸 يُنوَّن بـ <strong>فتحتين قبل الألف</strong> في الحالات الثلاث:</p>
+      </div>
+      <table class="styled-table">
+        <thead><tr><th>الكلمة</th><th>الرفع</th><th>النصب</th><th>الجر</th></tr></thead>
+        <tbody>
+          <tr><td>فتى</td><td class="arabic-cell">فَتىً</td><td class="arabic-cell">فَتىً</td><td class="arabic-cell">فَتىً</td></tr>
+          <tr><td>عصا</td><td class="arabic-cell">عصاً</td><td class="arabic-cell">عصاً</td><td class="arabic-cell">عصاً</td></tr>
+          <tr><td>هدى</td><td class="arabic-cell">هُدىً</td><td class="arabic-cell">هُدىً</td><td class="arabic-cell">هُدىً</td></tr>
+        </tbody>
+      </table>
+
+      <div style="height:1.5rem"></div>
+      <div class="rule-box teal">
+        <h3>٢ — الاسم الممدود 🟢</h3>
+        <p>هو اسم آخره <span class="hl">همزة قبلها ألف زائدة</span>. مثل: بناء — سماء — صحراء</p>
+      </div>
+      <table class="styled-table">
+        <thead><tr><th>الكلمة</th><th>الرفع (ضمتان)</th><th>النصب (فتحتان)</th><th>الجر (كسرتان)</th></tr></thead>
+        <tbody>
+          <tr><td>دعاء</td><td class="arabic-cell">دعاءٌ</td><td class="arabic-cell">دعاءً</td><td class="arabic-cell">دعاءٍ</td></tr>
+          <tr><td>سماء</td><td class="arabic-cell">سماءٌ</td><td class="arabic-cell">سماءً</td><td class="arabic-cell">سماءٍ</td></tr>
+          <tr><td>هواء</td><td class="arabic-cell">هواءٌ</td><td class="arabic-cell">هواءً</td><td class="arabic-cell">هواءٍ</td></tr>
+        </tbody>
+      </table>
+
+      <div style="height:1.5rem"></div>
+      <div class="rule-box rose">
+        <h3>٣ — الاسم المنقوص 🔴</h3>
+        <p>هو اسم آخره <span class="hl-rose">ياء لازمة مكسور ما قبلها</span>. مثل: القاضي — الساعي — الداعي</p>
+        <p style="margin-top:0.5rem">🔸 في الرفع والجر: <strong>تُحذف الياء</strong> ويُنوَّن بكسرتين: قاضٍ — ساعٍ</p>
+        <p>🔸 في النصب: تثبت الياء بفتحتين: قاضياً — ساعياً</p>
+      </div>
+      <table class="styled-table">
+        <thead><tr><th>الكلمة</th><th>الرفع</th><th>النصب</th><th>الجر</th></tr></thead>
+        <tbody>
+          <tr><td>قاضي</td><td class="arabic-cell">قاضٍ</td><td class="arabic-cell">قاضياً</td><td class="arabic-cell">قاضٍ</td></tr>
+          <tr><td>راعي</td><td class="arabic-cell">راعٍ</td><td class="arabic-cell">راعياً</td><td class="arabic-cell">راعٍ</td></tr>
+          <tr><td>داعي</td><td class="arabic-cell">داعٍ</td><td class="arabic-cell">داعياً</td><td class="arabic-cell">داعٍ</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== ALEF LAYYINA ===== -->
+  <section class="topic-section theme-sage" id="alef">
+    <div class="section-header">
+      <div class="section-icon">✍️</div>
+      <div>
+        <h2>الألف اللينة في الأفعال والأسماء والحروف</h2>
+        <div class="subtitle">متى نكتب (ا) أو (ى)؟</div>
+      </div>
+    </div>
+    <div class="section-body">
+
+      <!-- SECTION 1: VERBS -->
+      <div class="rule-box sage">
+        <h3>١ — الألف اللينة في الأفعال</h3>
+      </div>
+
+      <div class="two-col">
+        <div class="rule-box sand">
+          <h3 style="color:var(--sage)">الأفعال الثلاثية (٣ حروف)</h3>
+          <p>نرجع إلى المضارع:</p>
+          <ul>
+            <li>أصلها واو → ألف قائمة <strong>(ا)</strong></li>
+            <li>أصلها ياء → ألف مقصورة <strong>(ى)</strong></li>
+          </ul>
+          <div style="margin-top:0.75rem">
+            <p>دَعا ← يدعو → <span class="badge sage">ا</span></p>
+            <p>سَعى ← يسعى → <span class="badge rose">ى</span></p>
+            <p>رَمى ← يرمي → <span class="badge rose">ى</span></p>
+          </div>
+        </div>
+        <div class="rule-box sand">
+          <h3 style="color:var(--sage)">الأفعال فوق الثلاثية (أكثر من ٣)</h3>
+          <p>ننظر إلى الحرف الذي قبل الألف:</p>
+          <ul>
+            <li>قبله ياء → <strong>(ا)</strong></li>
+            <li>ليس قبله ياء → <strong>(ى)</strong></li>
+          </ul>
+          <div style="margin-top:0.75rem">
+            <p>أَحيا ← قبل الألف ياء → <span class="badge sage">ا</span></p>
+            <p>اهتدى ← قبل الألف دال → <span class="badge rose">ى</span></p>
+            <p>استدعى ← قبل الألف عين → <span class="badge rose">ى</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: NOUNS -->
+      <div class="rule-box sage" style="margin-top:1rem">
+        <h3>٢ — الألف اللينة في الأسماء</h3>
+      </div>
+      <div class="two-col">
+        <div class="rule-box sand">
+          <h3 style="color:var(--sage)">الأسماء الثلاثية</h3>
+          <p>نرجع إلى التثنية أو الجمع:</p>
+          <ul>
+            <li>عصا ← عصوان → <span class="badge sage">ا</span></li>
+            <li>فتى ← فتيان → <span class="badge rose">ى</span></li>
+            <li>رحى ← رَحَيان → <span class="badge rose">ى</span></li>
+          </ul>
+        </div>
+        <div class="rule-box sand">
+          <h3 style="color:var(--sage)">الأسماء فوق الثلاثية</h3>
+          <ul>
+            <li>قبل الألف ياء → <strong>(ا)</strong></li>
+            <li>ليس قبلها ياء → <strong>(ى)</strong></li>
+          </ul>
+          <p style="margin-top:0.5rem">مستشفى ← قبلها فاء → <span class="badge rose">ى</span></p>
+          <p>هدايا ← قبلها ياء → <span class="badge sage">ا</span></p>
+          <p>مرايا ← قبلها ياء → <span class="badge sage">ا</span></p>
+        </div>
+      </div>
+
+      <!-- SECTION 3: PARTICLES -->
+      <div class="rule-box sage" style="margin-top:1rem">
+        <h3>٣ — الألف اللينة في الحروف</h3>
+        <p style="margin-top:0.5rem">القاعدة العامة: تُكتب <span class="hl-sage">ألفاً قائمة (ا)</span> في جميع الحروف</p>
+        <p>ما عدا <strong>أربعة حروف</strong> تُكتب بـ <span class="hl-rose">(ى)</span>:</p>
+      </div>
+      <div class="examples-grid">
+        <div class="example-chip"><span class="arabic">عَلى</span><span class="note">ألف مقصورة</span></div>
+        <div class="example-chip"><span class="arabic">إِلى</span><span class="note">ألف مقصورة</span></div>
+        <div class="example-chip"><span class="arabic">حَتى</span><span class="note">ألف مقصورة</span></div>
+        <div class="example-chip"><span class="arabic">بَلى</span><span class="note">ألف مقصورة</span></div>
+        <div class="example-chip"><span class="arabic">إِلّا — كَلّا — لَوْلا — لا</span><span class="note">ألف قائمة (ا)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POEM ===== -->
+  <section class="topic-section theme-ink" id="poem">
+    <div class="section-header">
+      <div class="section-icon">🌙</div>
+      <div>
+        <h2>النص الشعري: وصف الحُمّى</h2>
+        <div class="subtitle">قراءة وتحليل أبيات ابن الرومي</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="poem-lines">
+        <div class="poem-line">وزائرتي كأنَّ بها حياءً&nbsp;&nbsp;&nbsp;&nbsp;فليس تزورُ إلّا في الظلامِ</div>
+        <div class="poem-line">بذلتُ لها المطارفَ والحشايا&nbsp;&nbsp;&nbsp;&nbsp;فعافتها وباتت في عظامي</div>
+        <div class="poem-line">يضيقُ الجلدُ عن نفسي وعنها&nbsp;&nbsp;&nbsp;&nbsp;فتوسّعُه بأنواع السقامِ</div>
+        <div class="poem-line">كأنَّ الصبحَ يطردها فتجري&nbsp;&nbsp;&nbsp;&nbsp;مدامعُها بأربعةٍ سجامِ</div>
+        <div class="poem-line">أبنت الدهر عندي كلُّ بنتٍ&nbsp;&nbsp;&nbsp;&nbsp;فكيف وصلتِ أنتِ من الزحامِ</div>
+      </div>
+
+      <div class="rule-box sand" style="margin-top:1.5rem">
+        <h3>💡 معاني المفردات الصعبة</h3>
+        <div class="two-col">
+          <div>
+            <p><strong>بذلتُ:</strong> أعطيتُ — قدّمتُ</p>
+            <p><strong>عافتها:</strong> كرهتها</p>
+            <p><strong>السقام:</strong> المرض</p>
+            <p><strong>السجام:</strong> الدموع المتساقطة</p>
+          </div>
+          <div>
+            <p><strong>مدامعها:</strong> دموعها</p>
+            <p><strong>المطارف والحشايا:</strong> الملابس والوسائد الفاخرة</p>
+            <p><strong>بنت الدهر:</strong> الحُمّى (ابنة الزمن)</p>
+            <p><strong>الزحام:</strong> الازدحام والكثرة</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule-box rose">
+        <h3>🎭 التحليل الأدبي</h3>
+        <ul>
+          <li>الشاعر يُشبّه الحُمّى بـ <strong>زائرة</strong> خجولة تأتي في الظلام (تشخيص).</li>
+          <li>نسب إليها أفعال الإنسان: تزور — تستحي — تبكي — تجري.</li>
+          <li>الصبح يطردها كالشرطي — صورة بيانية رائعة.</li>
+          <li>مفرد (عظام): <strong>عَظْم</strong> (العضو) — أو <strong>عَظيم</strong> (الكبير في المعنى المجازي).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JAR ===== -->
+  <section class="topic-section theme-teal" id="jar">
+    <div class="section-header">
+      <div class="section-icon">❓</div>
+      <div>
+        <h2>دخول حروف الجر على (ما) و(مَن) الاستفهامية</h2>
+        <div class="subtitle">قواعد الحذف والإدغام</div>
+      </div>
+    </div>
+    <div class="section-body">
+      <div class="rule-box teal">
+        <h3>١ — (ما) الاستفهامية مع حروف الجر</h3>
+        <p>إذا دخل حرف الجر على <strong>ما</strong> الاستفهامية، <span class="hl">تُحذف الألف</span>.</p>
+      </div>
+
+      <table class="styled-table">
+        <thead><tr><th>الأصل</th><th>بعد الحذف</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>في + ما</td><td class="arabic-cell">فِيمَ</td><td class="arabic-cell">فيمَ تفكر؟</td></tr>
+          <tr><td>على + ما</td><td class="arabic-cell">عَلامَ</td><td class="arabic-cell">علامَ تعتمد؟</td></tr>
+          <tr><td>إلى + ما</td><td class="arabic-cell">إِلامَ</td><td class="arabic-cell">إلامَ ترمي هذه الفكرة؟</td></tr>
+          <tr><td>عن + ما</td><td class="arabic-cell">عَمَّ</td><td class="arabic-cell">عمَّ تبحث؟</td></tr>
+          <tr><td>من + ما</td><td class="arabic-cell">مِمَّ</td><td class="arabic-cell">ممَّ تخاف؟</td></tr>
+          <tr><td>الباء + ما</td><td class="arabic-cell">بِمَ</td><td class="arabic-cell">بِمَ تفكر؟</td></tr>
+        </tbody>
+      </table>
+
+      <div style="height:1.5rem"></div>
+      <div class="rule-box violet">
+        <h3>٢ — (مَن) مع حرفَي الجر (مِن) و(عن)</h3>
+        <p>إذا دخل <strong>مِن</strong> أو <strong>عن</strong> على <strong>مَن</strong> الاستفهامية، <span class="hl-violet">تُدغم النونان</span>:</p>
+      </div>
+      <div class="two-col">
+        <div class="rule-box sand">
+          <h3 style="color:var(--violet)">مع (مَن) الاستفهامية → إدغام</h3>
+          <p>مِن + مَن → <span class="hl-violet">مِمَّن</span> أخذتَ القلم؟</p>
+          <p>عن + مَن → <span class="hl-violet">عَمَّن</span> تتحدث؟</p>
+        </div>
+        <div class="rule-box sand">
+          <h3 style="color:var(--teal)">مع (مَن) الموصولة → بدون إدغام</h3>
+          <p>سمعتُ عن مَن شارك في المسابقة.</p>
+          <p>أخذتُ الجائزة من مَن فاز.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MUDARI ===== -->
+  <section class="topic-section theme-rose" id="mudari">
+    <div class="section-header">
+      <div class="section-icon">🔧</div>
+      <div>
+        <h2>إعراب الفعل المضارع</h2>
+        <div class="subtitle">الرفع — النصب — الجزم</div>
+      </div>
+    </div>
+    <div class="section-body">
+
+      <!-- RAFA' -->
+      <div class="rule-box sage">
+        <h3>١ — رفع الفعل المضارع</h3>
+        <p>يُرفع الفعل المضارع إذا <strong>لم يسبقه ناصب ولا جازم</strong>.</p>
+      </div>
+      <table class="styled-table">
+        <thead><tr><th>نوع الفعل</th><th>علامة الرفع</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>صحيح الآخر</td><td>الضمة الظاهرة</td><td class="arabic-cell">يكتُبُ — يجلسُ</td></tr>
+          <tr><td>معتل الآخر</td><td>الضمة المقدّرة</td><td class="arabic-cell">يسعى — يدعو — يقضي</td></tr>
+          <tr><td>الأفعال الخمسة</td><td>ثبوت النون</td><td class="arabic-cell">يكتبون — تكتبين — يكتبان</td></tr>
+        </tbody>
+      </table>
+
+      <div style="height:1.5rem"></div>
+      <!-- NASB -->
+      <div class="rule-box gold">
+        <h3>٢ — نصب الفعل المضارع</h3>
+        <p>يُنصب إذا سبقته حروف النصب: <span class="hl-gold">أَنْ — لَنْ — كَيْ</span></p>
+      </div>
+      <table class="styled-table">
+        <thead><tr><th>نوع الفعل</th><th>علامة النصب</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>صحيح الآخر</td><td>الفتحة الظاهرة</td><td class="arabic-cell">لن يُهملَ واجبَه</td></tr>
+          <tr><td>معتل بواو أو ياء</td><td>الفتحة الظاهرة</td><td class="arabic-cell">أريد أن أدعوَ — أن أمشيَ</td></tr>
+          <tr><td>معتل بألف</td><td>الفتحة المقدّرة</td><td class="arabic-cell">لن يسعى إلى الشر</td></tr>
+          <tr><td>الأفعال الخمسة</td><td>حذف النون</td><td class="arabic-cell">لن يكتبوا — أن تكتبي</td></tr>
+        </tbody>
+      </table>
+
+      <div style="height:1.5rem"></div>
+      <!-- JAZM -->
+      <div class="rule-box violet">
+        <h3>٣ — جزم الفعل المضارع</h3>
+        <p>يُجزم إذا سبقته حروف الجزم: <span class="hl-violet">لَمْ — لا الناهية — لام الأمر</span></p>
+      </div>
+      <table class="styled-table">
+        <thead><tr><th>نوع الفعل</th><th>علامة الجزم</th><th>مثال</th></tr></thead>
+        <tbody>
+          <tr><td>صحيح الآخر</td><td>السكون</td><td class="arabic-cell">لم يكتبْ — لا تُهملْ</td></tr>
+          <tr><td>معتل الآخر</td><td>حذف حرف العلة</td><td class="arabic-cell">لم يسعَ — لم يدعُ — لم يقضِ</td></tr>
+          <tr><td>الأفعال الخمسة</td><td>حذف النون</td><td class="arabic-cell">لم يكتبوا — لا تكتبي</td></tr>
+        </tbody>
+      </table>
+
+      <div class="rule-box teal" style="margin-top:1.5rem">
+        <h3>⭐ الأفعال الخمسة</h3>
+        <p>كل فعل مضارع اتصل به: <span class="hl">واو الجماعة — ألف الاثنين — ياء المؤنث المخاطبة</span></p>
+        <div class="examples-grid" style="margin-top:0.75rem">
+          <div class="example-chip"><span class="arabic">يكتبون</span></div>
+          <div class="example-chip"><span class="arabic">تكتبون</span></div>
+          <div class="example-chip"><span class="arabic">يكتبان</span></div>
+          <div class="example-chip"><span class="arabic">تكتبان</span></div>
+          <div class="example-chip"><span class="arabic">تكتبين</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MUSHTAQAT ===== -->
+  <section class="topic-section theme-sage" id="mushtaqat">
+    <div class="section-header">
+      <div class="section-icon">🌱</div>
+      <div>
+        <h2>المشتقات</h2>
+        <div class="subtitle">اسم الزمان — اسم المكان — المصدر</div>
+      </div>
+    </div>
+    <div class="section-body">
+
+      <div class="two-col">
+        <div class="rule-box sand">
+          <h3 style="color:var(--sage)">اسم الزمان</h3>
+          <p>يدلّ على <strong>وقت وقوع الفعل</strong></p>
+          <ul>
+            <li>مَوعِد الاجتماع صباحاً</li>
+            <li>مَطلَع الشمس مجيل</li>
+            <li>مَغرِب الشمس وقت الأذان</li>
+          </ul>
+        </div>
+        <div class="rule-box sand">
+          <h3 style="color:var(--teal)">اسم المكان</h3>
+          <p>يدلّ على <strong>مكان وقوع الفعل</strong></p>
+          <ul>
+            <li>المسجدُ مَعبَد المسلمين</li>
+            <li>مَلعَب المدرسة واسع</li>
+            <li>مَنزِل خالد قريب</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rule-box sage" style="margin-top:1rem">
+        <h3>📐 الصياغة</h3>
+        <p><strong>من الثلاثي:</strong> على وزن <span class="hl-sage">مَفعَل</span> أو <span class="hl-sage">مَفعِل</span></p>
+        <p>جلس ← مَجلَس &nbsp;|&nbsp; نزل ← مَنزِل &nbsp;|&nbsp; طلع ← مَطلَع</p>
+        <p style="margin-top:0.5rem"><strong>من غير الثلاثي:</strong> على وزن اسم المفعول (ميم مضمومة + فتح ما قبل الآخر)</p>
+        <p>اجتمع ← مُجتَمَع &nbsp;|&nbsp; استخرج ← مُستَخرَج</p>
+      </div>
+
+      <div style="height:1.5rem"></div>
+      <div class="rule-box gold">
+        <h3>📚 المصدر</h3>
+        <p>اسم مشتق يدلّ على <strong>الحدث المجرد</strong> دون الزمن.</p>
+      </div>
+      <table class="styled-table">
+        <thead><tr><th>الفعل</th><th>وزنه</th><th>المصدر</th><th>وزن المصدر</th></tr></thead>
+        <tbody>
+          <tr><td class="arabic-cell">كَتَبَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">كِتابة</td><td class="arabic-cell">فِعالة</td></tr>
+          <tr><td class="arabic-cell">جَلَسَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">جُلوس</td><td class="arabic-cell">فُعول</td></tr>
+          <tr><td class="arabic-cell">قَرَأَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">قِراءة</td><td class="arabic-cell">فِعالة</td></tr>
+          <tr><td class="arabic-cell">خَرَجَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">خُروج</td><td class="arabic-cell">فُعول</td></tr>
+          <tr><td class="arabic-cell">شَكَرَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">شُكر</td><td class="arabic-cell">فُعل</td></tr>
+        </tbody>
+      </table>
+
+      <!-- QUIZ -->
+      <div style="height:1.5rem"></div>
+      <div class="rule-box violet">
+        <h3>🎯 اختبر نفسك</h3>
+      </div>
+      <div id="quiz-container">
+        <div class="progress-bar-wrap"><div class="progress-bar" id="quiz-progress"></div></div>
+
+        <div class="quiz-q">
+          <strong>١ — ما أداة الشرط المناسبة؟ &quot;...... تجتهدْ تنجحْ&quot;</strong>
+          <div class="quiz-options">
+            <button class="opt-btn" onclick="checkAns(this,'correct')">إنْ</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">مَنْ</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">أَنْ</button>
+          </div>
+        </div>
+
+        <div class="quiz-q">
+          <strong>٢ — كلمة &quot;سماء&quot; تُعدّ:</strong>
+          <div class="quiz-options">
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">اسماً مقصوراً</button>
+            <button class="opt-btn" onclick="checkAns(this,'correct')">اسماً ممدوداً</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">اسماً منقوصاً</button>
+          </div>
+        </div>
+
+        <div class="quiz-q">
+          <strong>٣ — كلمة &quot;هدى&quot; تُكتب بـ:</strong>
+          <div class="quiz-options">
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">ألف قائمة (ا)</button>
+            <button class="opt-btn" onclick="checkAns(this,'correct')">ألف مقصورة (ى)</button>
+          </div>
+        </div>
+
+        <div class="quiz-q">
+          <strong>٤ — عالمة رفع الأفعال الخمسة:</strong>
+          <div class="quiz-options">
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">الضمة</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">حذف النون</button>
+            <button class="opt-btn" onclick="checkAns(this,'correct')">ثبوت النون</button>
+          </div>
+        </div>
+
+        <div class="quiz-q">
+          <strong>٥ — &quot;عن + ما&quot; الاستفهامية تصبح:</strong>
+          <div class="quiz-options">
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">عنما</button>
+            <button class="opt-btn" onclick="checkAns(this,'correct')">عَمَّ</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">عنمَ</button>
+          </div>
+        </div>
+
+        <div class="quiz-q">
+          <strong>٦ — المصدر من الفعل &quot;جلس&quot; هو:</strong>
+          <div class="quiz-options">
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">جالس</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">مجلس</button>
+            <button class="opt-btn" onclick="checkAns(this,'correct')">جلوس</button>
+          </div>
+        </div>
+
+        <div class="quiz-q">
+          <strong>٧ — &quot;مِن + مَن&quot; الاستفهامية تصبح:</strong>
+          <div class="quiz-options">
+            <button class="opt-btn" onclick="checkAns(this,'correct')">مِمَّن</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">من من</button>
+            <button class="opt-btn" onclick="checkAns(this,'wrong')">مِنمَن</button>
+          </div>
+        </div>
+
+        <div id="quiz-result" style="display:none;margin-top:1rem;text-align:center;padding:1rem;border-radius:12px;background:#d4edda;color:#155724;font-weight:700;font-size:1rem;"></div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>أوراق مراجعة لاختبار نهائي الفصل الدراسي الثاني · <strong>مدارس نجد الأهلية</strong></p>
+  <p style="margin-top:0.5rem">إشراف المادة: أ. هيثم مختار · اللغة العربية — الصف السادس الابتدائي</p>
+</footer>
+
+<script>
+  // Accordion
+  function toggleAcc(btn) {
+    const content = btn.nextElementSibling;
+    const isOpen = content.classList.contains('open');
+    // close all
+    document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+    document.querySelectorAll('.accordion-btn').forEach(b => b.classList.remove('open'));
+    if (!isOpen) {
+      content.classList.add('open');
+      btn.classList.add('open');
+    }
+  }
+
+  // Quiz
+  let answered = 0;
+  const total = 7;
+
+  function checkAns(btn, result) {
+    const optRow = btn.parentElement;
+    if (optRow.querySelector('.correct, .wrong')) return; // already answered
+    btn.classList.add(result);
+    if (result === 'wrong') {
+      optRow.querySelectorAll('.opt-btn').forEach(b => {
+        if (b.getAttribute('onclick').includes("'correct'")) b.classList.add('correct');
+      });
+    }
+    answered++;
+    document.getElementById('quiz-progress').style.width = (answered / total * 100) + '%';
+    if (answered === total) {
+      const r = document.getElementById('quiz-result');
+      r.style.display = 'block';
+      r.textContent = '✅ أنهيت الاختبار! بالتوفيق في امتحانك 🌟';
+    }
+  }
+</script>
+</body>
+</html>
