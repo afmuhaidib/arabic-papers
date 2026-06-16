@@ -2,7 +2,11 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="مراجعة عربي ٦">
+<meta name="theme-color" content="#1a1a2e">
 <meta name="description" content="مراجعة شاملة وتفاعلية لمحاور اختبار نهائي اللغة العربية — الصف السادس الابتدائي، الفصل الدراسي الثاني، مدارس نجد الأهلية">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="مراجعة اللغة العربية – الصف السادس">
@@ -12,7 +16,7 @@
 <title>مراجعة اللغة العربية – الصف السادس</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;900&family=Noto+Kufi+Arabic:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink:    #1a1a2e;
@@ -37,11 +41,12 @@
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     background: var(--sand);
     color: var(--ink);
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.75;
+    font-weight: 400;
   }
 
   /* ── HEADER ── */
@@ -63,8 +68,9 @@
     gap: 1rem;
   }
   .site-title {
-    font-family: 'Amiri', serif;
-    font-size: 1.3rem;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
     color: var(--gold-light);
     padding: 1rem 0;
     white-space: nowrap;
@@ -104,7 +110,7 @@
     top: -8rem;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Amiri', serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
     pointer-events: none;
   }
   .hero-tag {
@@ -119,12 +125,13 @@
     margin-bottom: 1.5rem;
   }
   .hero h1 {
-    font-family: 'Amiri', serif;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 700;
-    line-height: 1.3;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.25;
     margin-bottom: 1rem;
     color: #fff;
+    letter-spacing: -0.01em;
   }
   .hero h1 span { color: var(--gold-light); }
   .hero p {
@@ -190,7 +197,8 @@
     flex-shrink: 0;
   }
   .section-header h2 {
-    font-size: 1.25rem;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--ink);
     margin: 0;
@@ -256,7 +264,7 @@
     font-size: 0.9rem;
     text-align: center;
   }
-  .example-chip .arabic { font-family: 'Amiri', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); display: block; margin-bottom: 0.2rem; }
+  .example-chip .arabic { font-family: 'Noto Kufi Arabic', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--ink); display: block; margin-bottom: 0.2rem; }
   .example-chip .note { font-size: 0.75rem; color: var(--muted); }
 
   /* ── TABLE ── */
@@ -280,7 +288,7 @@
   }
   .styled-table tr:last-child td { border-bottom: none; }
   .styled-table tr:nth-child(even) td { background: var(--sand); }
-  .styled-table .arabic-cell { font-family: 'Amiri', serif; font-size: 1.1rem; }
+  .styled-table .arabic-cell { font-family: 'Noto Kufi Arabic', sans-serif; font-size: 1.1rem; font-weight: 600; }
 
   /* ── TWO COLUMN ── */
   .two-col {
@@ -299,13 +307,14 @@
     margin: 1rem 0;
   }
   .poem-line {
-    font-family: 'Amiri', serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
     font-size: 1.15rem;
+    font-weight: 600;
     color: #e8d8a0;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
     border-bottom: 1px solid rgba(255,255,255,0.08);
-    line-height: 2;
+    line-height: 2.1;
   }
   .poem-line:last-child { border-bottom: none; }
 
@@ -344,7 +353,7 @@
     border: none;
     padding: 1rem 1.25rem;
     text-align: right;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--ink);
@@ -371,9 +380,10 @@
     border-right: 4px solid var(--gold);
     border-radius: 0 12px 12px 0;
     padding: 1.5rem;
-    font-family: 'Amiri', serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
     font-size: 1.05rem;
-    line-height: 2.1;
+    font-weight: 400;
+    line-height: 2.2;
     color: #2a2420;
     margin-bottom: 1.5rem;
   }
@@ -385,10 +395,10 @@
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
     text-align: center;
-    font-family: 'Amiri', serif;
-    font-size: 1.3rem;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     margin: 1rem 0;
-    letter-spacing: 0.02em;
   }
   .formula-box .plus { color: #888; margin: 0 0.5rem; font-size: 1rem; }
 
@@ -424,7 +434,7 @@
     border: 1.5px solid var(--border);
     border-radius: 8px;
     padding: 0.35rem 0.9rem;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 0.85rem;
     cursor: pointer;
     transition: all 0.2s;
@@ -437,6 +447,94 @@
   /* progress bar */
   .progress-bar-wrap { background: #e0e0e0; border-radius: 100px; height: 6px; margin-bottom: 1.5rem; }
   .progress-bar { background: var(--gold); height: 6px; border-radius: 100px; width: 0; transition: width 0.4s; }
+
+  /* ── TABLE SCROLL WRAPPER (mobile) ── */
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* ── iPHONE / MOBILE ── */
+  body { -webkit-text-size-adjust: 100%; }
+
+  button, a { -webkit-tap-highlight-color: transparent; }
+
+  /* Safe area insets for notch / home bar */
+  header {
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  footer {
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  main {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+
+  @media (max-width: 768px) {
+    /* Compact single-row header on mobile */
+    .header-inner { padding: 0 0.75rem; gap: 0.5rem; }
+    .site-title { display: none; }
+    nav {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0.5rem 0;
+      gap: 0.2rem;
+      justify-content: flex-start;
+      scrollbar-width: none;
+      width: 100%;
+    }
+    nav::-webkit-scrollbar { display: none; }
+    nav a { font-size: 0.78rem; padding: 0.5rem 0.7rem; flex-shrink: 0; }
+
+    /* Hero */
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .hero p { font-size: 0.95rem; }
+    .hero-stats { gap: 1.25rem; }
+    .stat-num { font-size: 1.6rem; }
+
+    /* Section cards */
+    .section-header { padding: 1rem 1.25rem; }
+    .section-header h2 { font-size: 1.05rem; }
+    .section-body { padding: 1.25rem; }
+
+    /* Rule boxes */
+    .rule-box { padding: 1rem 1.1rem; }
+
+    /* Main */
+    main { padding-top: 2rem; padding-bottom: 3rem; }
+
+    /* Quiz buttons — Apple HIG: min 44×44 pt touch target */
+    .opt-btn {
+      min-height: 44px;
+      padding: 0.55rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Accordion — ensure 44px tap height */
+    .accordion-btn { min-height: 44px; }
+
+    /* Examples grid — prevent overflow on 375px screens */
+    .examples-grid { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
+
+    /* Poem lines — wrap long half-lines */
+    .poem-line { font-size: 1rem; white-space: normal; }
+
+    /* Formula box */
+    .formula-box { font-size: 1.05rem; padding: 1rem; }
+
+    /* Tables — horizontal scroll */
+    .styled-table { font-size: 0.82rem; min-width: 480px; }
+    .styled-table th, .styled-table td { padding: 0.55rem 0.7rem; }
+  }
+
+  @media (max-width: 390px) {
+    /* iPhone 14/15 Pro and smaller */
+    .section-header h2 { font-size: 0.95rem; }
+    .reading-text { font-size: 0.97rem; }
+  }
 </style>
 </head>
 <body>
@@ -583,7 +681,7 @@
         </div>
       </div>
 
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead>
           <tr><th>الجملة</th><th>أداة الشرط</th><th>فعل الشرط</th><th>جواب الشرط</th></tr>
         </thead>
@@ -613,7 +711,7 @@
             <td class="arabic-cell">يَفلحْ</td>
           </tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
   </section>
 
@@ -654,14 +752,14 @@
       <div class="divider"></div>
       <div class="rule-box sand">
         <h3>🔡 الضمائر المتصلة بألفاظ التوكيد</h3>
-        <table class="styled-table" style="margin-top:0.5rem">
+        <div class="table-scroll"><table class="styled-table" style="margin-top:0.5rem">
           <thead><tr><th>المؤكَّد</th><th>كُلّ</th><th>نَفْس</th><th>عَيْن</th></tr></thead>
           <tbody>
             <tr><td>مفرد مذكر</td><td class="arabic-cell">كُلُّه</td><td class="arabic-cell">نَفْسُه</td><td class="arabic-cell">عَيْنُه</td></tr>
             <tr><td>مفرد مؤنث</td><td class="arabic-cell">كُلُّها</td><td class="arabic-cell">نَفْسُها</td><td class="arabic-cell">عَيْنُها</td></tr>
             <tr><td>جمع مذكر</td><td class="arabic-cell">كُلُّهم</td><td class="arabic-cell">أَنْفُسُهم</td><td class="arabic-cell">أَعْيُنُهم</td></tr>
           </tbody>
-        </table>
+        </table></div>
       </div>
     </div>
   </section>
@@ -682,28 +780,28 @@
         <p>هو اسم آخره <span class="hl-gold">ألفٌ لازمة</span> مفتوح ما قبلها. مثل: فَتى — عصا — مستشفى</p>
         <p style="margin-top:0.5rem">🔸 يُنوَّن بـ <strong>فتحتين قبل الألف</strong> في الحالات الثلاث:</p>
       </div>
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>الكلمة</th><th>الرفع</th><th>النصب</th><th>الجر</th></tr></thead>
         <tbody>
           <tr><td>فتى</td><td class="arabic-cell">فَتىً</td><td class="arabic-cell">فَتىً</td><td class="arabic-cell">فَتىً</td></tr>
           <tr><td>عصا</td><td class="arabic-cell">عصاً</td><td class="arabic-cell">عصاً</td><td class="arabic-cell">عصاً</td></tr>
           <tr><td>هدى</td><td class="arabic-cell">هُدىً</td><td class="arabic-cell">هُدىً</td><td class="arabic-cell">هُدىً</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <div style="height:1.5rem"></div>
       <div class="rule-box teal">
         <h3>٢ — الاسم الممدود 🟢</h3>
         <p>هو اسم آخره <span class="hl">همزة قبلها ألف زائدة</span>. مثل: بناء — سماء — صحراء</p>
       </div>
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>الكلمة</th><th>الرفع (ضمتان)</th><th>النصب (فتحتان)</th><th>الجر (كسرتان)</th></tr></thead>
         <tbody>
           <tr><td>دعاء</td><td class="arabic-cell">دعاءٌ</td><td class="arabic-cell">دعاءً</td><td class="arabic-cell">دعاءٍ</td></tr>
           <tr><td>سماء</td><td class="arabic-cell">سماءٌ</td><td class="arabic-cell">سماءً</td><td class="arabic-cell">سماءٍ</td></tr>
           <tr><td>هواء</td><td class="arabic-cell">هواءٌ</td><td class="arabic-cell">هواءً</td><td class="arabic-cell">هواءٍ</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <div style="height:1.5rem"></div>
       <div class="rule-box rose">
@@ -712,14 +810,14 @@
         <p style="margin-top:0.5rem">🔸 في الرفع والجر: <strong>تُحذف الياء</strong> ويُنوَّن بكسرتين: قاضٍ — ساعٍ</p>
         <p>🔸 في النصب: تثبت الياء بفتحتين: قاضياً — ساعياً</p>
       </div>
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>الكلمة</th><th>الرفع</th><th>النصب</th><th>الجر</th></tr></thead>
         <tbody>
           <tr><td>قاضي</td><td class="arabic-cell">قاضٍ</td><td class="arabic-cell">قاضياً</td><td class="arabic-cell">قاضٍ</td></tr>
           <tr><td>راعي</td><td class="arabic-cell">راعٍ</td><td class="arabic-cell">راعياً</td><td class="arabic-cell">راعٍ</td></tr>
           <tr><td>داعي</td><td class="arabic-cell">داعٍ</td><td class="arabic-cell">داعياً</td><td class="arabic-cell">داعٍ</td></tr>
         </tbody>
-      </table>
+      </table></div>
     </div>
   </section>
 
@@ -873,7 +971,7 @@
         <p>إذا دخل حرف الجر على <strong>ما</strong> الاستفهامية، <span class="hl">تُحذف الألف</span>.</p>
       </div>
 
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>الأصل</th><th>بعد الحذف</th><th>مثال</th></tr></thead>
         <tbody>
           <tr><td>في + ما</td><td class="arabic-cell">فِيمَ</td><td class="arabic-cell">فيمَ تفكر؟</td></tr>
@@ -883,7 +981,7 @@
           <tr><td>من + ما</td><td class="arabic-cell">مِمَّ</td><td class="arabic-cell">ممَّ تخاف؟</td></tr>
           <tr><td>الباء + ما</td><td class="arabic-cell">بِمَ</td><td class="arabic-cell">بِمَ تفكر؟</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <div style="height:1.5rem"></div>
       <div class="rule-box violet">
@@ -921,14 +1019,14 @@
         <h3>١ — رفع الفعل المضارع</h3>
         <p>يُرفع الفعل المضارع إذا <strong>لم يسبقه ناصب ولا جازم</strong>.</p>
       </div>
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>نوع الفعل</th><th>علامة الرفع</th><th>مثال</th></tr></thead>
         <tbody>
           <tr><td>صحيح الآخر</td><td>الضمة الظاهرة</td><td class="arabic-cell">يكتُبُ — يجلسُ</td></tr>
           <tr><td>معتل الآخر</td><td>الضمة المقدّرة</td><td class="arabic-cell">يسعى — يدعو — يقضي</td></tr>
           <tr><td>الأفعال الخمسة</td><td>ثبوت النون</td><td class="arabic-cell">يكتبون — تكتبين — يكتبان</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <div style="height:1.5rem"></div>
       <!-- NASB -->
@@ -936,7 +1034,7 @@
         <h3>٢ — نصب الفعل المضارع</h3>
         <p>يُنصب إذا سبقته حروف النصب: <span class="hl-gold">أَنْ — لَنْ — كَيْ</span></p>
       </div>
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>نوع الفعل</th><th>علامة النصب</th><th>مثال</th></tr></thead>
         <tbody>
           <tr><td>صحيح الآخر</td><td>الفتحة الظاهرة</td><td class="arabic-cell">لن يُهملَ واجبَه</td></tr>
@@ -944,7 +1042,7 @@
           <tr><td>معتل بألف</td><td>الفتحة المقدّرة</td><td class="arabic-cell">لن يسعى إلى الشر</td></tr>
           <tr><td>الأفعال الخمسة</td><td>حذف النون</td><td class="arabic-cell">لن يكتبوا — أن تكتبي</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <div style="height:1.5rem"></div>
       <!-- JAZM -->
@@ -952,14 +1050,14 @@
         <h3>٣ — جزم الفعل المضارع</h3>
         <p>يُجزم إذا سبقته حروف الجزم: <span class="hl-violet">لَمْ — لا الناهية — لام الأمر</span></p>
       </div>
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>نوع الفعل</th><th>علامة الجزم</th><th>مثال</th></tr></thead>
         <tbody>
           <tr><td>صحيح الآخر</td><td>السكون</td><td class="arabic-cell">لم يكتبْ — لا تُهملْ</td></tr>
           <tr><td>معتل الآخر</td><td>حذف حرف العلة</td><td class="arabic-cell">لم يسعَ — لم يدعُ — لم يقضِ</td></tr>
           <tr><td>الأفعال الخمسة</td><td>حذف النون</td><td class="arabic-cell">لم يكتبوا — لا تكتبي</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <div class="rule-box teal" style="margin-top:1.5rem">
         <h3>⭐ الأفعال الخمسة</h3>
@@ -1020,7 +1118,7 @@
         <h3>📚 المصدر</h3>
         <p>اسم مشتق يدلّ على <strong>الحدث المجرد</strong> دون الزمن.</p>
       </div>
-      <table class="styled-table">
+      <div class="table-scroll"><table class="styled-table">
         <thead><tr><th>الفعل</th><th>وزنه</th><th>المصدر</th><th>وزن المصدر</th></tr></thead>
         <tbody>
           <tr><td class="arabic-cell">كَتَبَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">كِتابة</td><td class="arabic-cell">فِعالة</td></tr>
@@ -1029,7 +1127,7 @@
           <tr><td class="arabic-cell">خَرَجَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">خُروج</td><td class="arabic-cell">فُعول</td></tr>
           <tr><td class="arabic-cell">شَكَرَ</td><td class="arabic-cell">فَعَلَ</td><td class="arabic-cell">شُكر</td><td class="arabic-cell">فُعل</td></tr>
         </tbody>
-      </table>
+      </table></div>
 
       <!-- QUIZ -->
       <div style="height:1.5rem"></div>
